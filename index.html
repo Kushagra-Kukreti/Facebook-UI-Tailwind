@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+</head>
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+</style>
+<body class="bg-gray-200 p-0 m-0 h-full">
+     <div class=" flex justify-center items-center h-full ">
+        <!-- left -->
+        <span class="w-[47.5%] mr-2 self-start mt-36">
+            <img class=" m-0 p-0 object-cover h-28" src="facebook_svg.svg" alt="">
+            <div class="ml-6 w-4/5 text-3xl">Facebook helps you connect and share with the people in your life.</div>
+        </span>
+
+        <!-- right -->
+        <div class=" flex flex-col bg-white p-6 gap-5 w-3/3 rounded-lg relative">
+            <input class=" border  border-gray-200 rounded-md p-3 w-[330px]" type="text" placeholder="Email address or phone number ">
+            <input class=" border  border-gray-200 rounded-md p-3 w-[330px]" type="password" placeholder="Password">
+            <button class="bg-blue-600 px-6 py-3 border rounded-lg font-bold text-white text-lg">Log in</button>
+            <span class=" hover:underline hover:cursor-pointer flex justify-center items-center text-blue-600">Forgotten password?</span>
+            <hr/>
+            <button class="bg-[#42b72a] hover:bg-green-600 px-4 py-3 border rounded-lg font-bold text-white text-lg w-fit self-center" >Create new account</button>
+            <span class="absolute -bottom-12 self-center"><span class="font-bold hover:underline hover:cursor-pointer">Create a Page</span> for a celebrity, brand or business.</span>
+        </div>
+        
+     </div>
+</body>
+</html>
